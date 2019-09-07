@@ -11,22 +11,22 @@ class MyApp extends StatelessWidget {
         body: Column(children: [
           Text('The question is '),
           RaisedButton(
-            child: Text(
-              'Answer 1',
-            ),
-            onPressed: null
+              child: Text(
+                'Answer 1',
+              ),
+              onPressed: () => print("Answer 1 Chosen"),
           ),
           RaisedButton(
             child: Text(
               'Answer 2',
             ),
-            onPressed: null,
+            onPressed: () => print("Answer 2 Chosen"),
           ),
           RaisedButton(
             child: Text(
               'Answer 3',
             ),
-            onPressed: null,
+            onPressed: () => print("Answer 3 Chosen"),
           ),
         ]),
       ),
