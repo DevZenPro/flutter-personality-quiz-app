@@ -8,7 +8,27 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(title: Text('My Awesome App')),
-        body: Text('This is my default text! :D'),
+        body: Column(children: [
+          Text('The question is '),
+          RaisedButton(
+            child: Text(
+              'Answer 1',
+            ),
+            onPressed: null
+          ),
+          RaisedButton(
+            child: Text(
+              'Answer 2',
+            ),
+            onPressed: null,
+          ),
+          RaisedButton(
+            child: Text(
+              'Answer 3',
+            ),
+            onPressed: null,
+          ),
+        ]),
       ),
     );
   }
